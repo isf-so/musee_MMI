@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
 }
 
 .blur-effect {
@@ -22,6 +21,10 @@ body {
 
 .container {
     display: none; /* Masque le contenu au départ */
+    height: 100vh;
+    background: url('../img/musee.jpg');
+    background-size: cover;
+    background-position-y: -20vh;
 }
 
 .container h2 {
@@ -36,14 +39,24 @@ body {
 
 .oeuvre{
     display: flex;
+    position: relative;
     justify-content: center;
     gap: 10vh;
     font-family: 'FUTURA65MEDIUM';
+
     align-items: center;
     color: white;
 }
-.oeuvre2,
+.oeuvre2{
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50vh;
+    color: black;
+}
 .oeuvre1{
+    position: absolute;
     background-color: white;
     border-radius: 10px;
     padding: 10px;
