@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 blurryBackground.style.display = "none";
                 // Rediriger vers une autre page HTML après la suppression
                 window.location.href = "pages/1home.html";
-                
             }, 2000);
         });
     });
