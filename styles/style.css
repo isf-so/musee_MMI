@@ -1,57 +1,47 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-.relative {
-    position: relative;
-}
-
-.background {
-    background-image: url('background.jpg'); /* Remplacer 'background.jpg' par le chemin de votre image de fond */
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
+body{
     overflow: hidden;
-    z-index: 1;
-}
-
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-}
-
-.conteneur {
-    width: 100%;
-    overflow: hidden;
-    height: 100vh;
     background-color: black;
-    color: white;
+}
+.blurry-background {
     position: relative;
-    z-index: 2;
-}
-
-.contenu {
-    width: 2000px;
-    display: flex;
-}
-
-.contenu > * {
-    flex-shrink: 0;
-    margin-right: 20px;
-}
-
-#centeredText {
-    height: 100vh;
+    width: 100%;
+    height: 100vh; /* Modifiez la hauteur selon vos besoins */
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-  }
+}
+
+.blurry-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/background.jpg'); /* Remplacez 'lien_de_votre_image.jpg' par le lien de votre image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* Ajustez la valeur de flou selon vos besoins */
+    opacity: 0.8; /* Ajustez l'opacité selon vos besoins */
+    z-index: -1;
+}
+.content>h1{
+    margin: 0;
+}
+.content>h3{
+    margin: 0;
+}
+.content {
+    position: relative;
+    font-family: 'FUTURA65MEDIUM';
+    z-index: 1;
+    color: rgb(255, 255, 255); /* Couleur du texte */
+    font-size: 24px; /* Taille du texte */
+    font-weight: bold; /* Style du texte */
+    text-align: center;
+}
+@font-face{
+    font-family: 'FUTURA65MEDIUM';
+    src : url('../font/FUTURA65MEDIUM.TTF');
+}
