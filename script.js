@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
             setTimeout(function() {
                 blurryBackground.style.display = "none";
                 // Rediriger vers une autre page HTML après la suppression
-                window.location.href = "../pages/musee.html";
+                window.location.href = "musee.html";
+                
             }, 2000);
         });
     });
