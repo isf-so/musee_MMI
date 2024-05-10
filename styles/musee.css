@@ -12,6 +12,7 @@ body {
     height: 100vh;
     background-image: url('../img/background.jpg');
     background-size: cover;
+    background-position-y: -80vh;
     background-repeat: no-repeat;
     filter: blur(20px); /* Ajoute le flou */
     opacity: 1; /* Rend la div visible au départ */
@@ -31,4 +32,28 @@ body {
 @font-face{
     font-family: 'FUTURA65MEDIUM';
     src : url('../font/FUTURA65MEDIUM.TTF');
+}
+
+.oeuvre{
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+    font-family: 'FUTURA65MEDIUM';
+    align-items: center;
+    color: white;
+}
+.oeuvre2,
+.oeuvre1{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50vh;
+    color: black;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 25vh 25vh;
+}
+.largeur{
+    width: 50vh;
 }
