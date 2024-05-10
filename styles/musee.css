@@ -49,24 +49,30 @@ body {
 }
 .oeuvre2{
     position: absolute;
-    background-color: white;
+    left: 77vh;
+    height: 70vh;
+    top: 12vh;
+    background-color: rgba(0, 0, 0, 0.237);
     border-radius: 10px;
-    padding: 10px;
+    padding: 18px;
     width: 50vh;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .oeuvre1{
     position: absolute;
-    background-color: white;
+    left: 19vh;
+    height: 70vh;
+    top: 12vh;
+    background-color: rgba(0, 0, 0, 0.237);
     border-radius: 10px;
-    padding: 10px;
-    width: 50vh;
-    color: black;
+    padding: 18px;
+    width: 48vh;
+    color: rgb(255, 255, 255);
 }
 .grid2{
     display: grid;
-    grid-template-columns: 25vh 25vh;
+    grid-template-columns: 20vh 27vh;
 }
 .largeur{
-    width: 50vh;
+    width: 48vh;
 }
