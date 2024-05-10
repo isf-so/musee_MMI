@@ -7,3 +7,11 @@ conteneur.addEventListener('wheel', (event) => {
 
     conteneur.scrollLeft += delta;
 });
+
+
+document.getElementById('centeredText').addEventListener('click', function() {
+    var element = document.querySelector('#centeredText');
+    element.parentNode.removeChild(element);
+});
+
+  

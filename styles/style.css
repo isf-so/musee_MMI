@@ -1,24 +1,57 @@
 body, html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Pour empêcher le défilement vertical */
+    overflow-x: hidden;
 }
 
-.conteneur {
-    width: 100%; /* Pour occuper toute la largeur de l'écran */
-    overflow: hidden; /* Cache la barre de défilement */
+.relative {
+    position: relative;
+}
+
+.background {
+    background-image: url('background.jpg'); /* Remplacer 'background.jpg' par le chemin de votre image de fond */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     height: 100vh;
-    background-color: black;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: white;
 }
 
-.contenu {
-    width: 2000px; /* Largeur du contenu */
-    display: flex; /* Pour que les éléments soient alignés horizontalement */
+.conteneur {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    position: relative;
+    z-index: 2;
 }
 
-/* Style optionnel pour les éléments de contenu */
-.contenu > * {
-    flex-shrink: 0; /* Empêche les éléments de réduire en taille */
-    margin-right: 20px; /* Espacement entre les éléments */
+.contenu {
+    width: 2000px;
+    display: flex;
 }
+
+.contenu > * {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+#centeredText {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
