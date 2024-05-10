@@ -1,0 +1,24 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Pour empêcher le défilement vertical */
+}
+
+.conteneur {
+    width: 100%; /* Pour occuper toute la largeur de l'écran */
+    overflow: hidden; /* Cache la barre de défilement */
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.contenu {
+    width: 2000px; /* Largeur du contenu */
+    display: flex; /* Pour que les éléments soient alignés horizontalement */
+}
+
+/* Style optionnel pour les éléments de contenu */
+.contenu > * {
+    flex-shrink: 0; /* Empêche les éléments de réduire en taille */
+    margin-right: 20px; /* Espacement entre les éléments */
+}
