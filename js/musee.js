@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Disparition du flou après 2 secondes
     setTimeout(function() {
-        blurEffect.style.opacity = "0";
+        blurEffect.style.display = "none";
         container.style.display = "block"; // Affichage du contenu après disparition du flou
     }, 1000);
 });

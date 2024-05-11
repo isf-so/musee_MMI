@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    padding: 0;
+    background-image: url('../img/floor.jpg');
+    background-size: cover;
 }
 
 .blur-effect {
@@ -21,10 +22,7 @@ body {
 
 .container {
     display: none; /* Masque le contenu au départ */
-    height: 100vh;
-    background: url('../img/musee.jpg');
-    background-size: cover;
-    background-position-y: -20vh;
+    height: 70vh;
 }
 
 .container h2 {
@@ -37,42 +35,36 @@ body {
     src : url('../font/FUTURA65MEDIUM.TTF');
 }
 
-.oeuvre{
+.oeuvre {
+    margin-top: 20vh;
+    margin-left: 50vh;
     display: flex;
-    position: relative;
-    justify-content: center;
-    gap: 10vh;
+    justify-content: flex-start; /* Pour commencer à gauche */
+    gap: 20vh;
     font-family: 'FUTURA65MEDIUM';
-
     align-items: center;
-    color: white;
-}
-.oeuvre2{
-    position: absolute;
-    left: 77vh;
-    height: 70vh;
-    top: 12vh;
-    background-color: rgba(0, 0, 0, 0.237);
-    border-radius: 10px;
-    padding: 18px;
-    width: 50vh;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 .oeuvre1{
-    position: absolute;
-    left: 19vh;
-    height: 70vh;
-    top: 12vh;
-    background-color: rgba(0, 0, 0, 0.237);
-    border-radius: 10px;
+    height: 45vh;
+    margin-right: 50vh;
+    width: 70vh;
+    background-size: cover;
+    border: 5px solid black;
     padding: 18px;
-    width: 48vh;
     color: rgb(255, 255, 255);
 }
 .grid2{
     display: grid;
-    grid-template-columns: 20vh 27vh;
+    grid-template-columns: 40vh 30vh;
 }
 .largeur{
-    width: 48vh;
+    width: 65vh;
+}
+
+#titre{
+    font-size: 57px;
+}
+#description{
+    font-size: 20px;
 }
