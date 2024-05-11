@@ -1,8 +1,10 @@
 body {
     margin: 0;
     background-image: url('../img/floor.jpg');
+    background-repeat: repeat-x;
     background-size: cover;
     overflow-y: hidden;
+    height: 100vh;
 }
 
 #ecran {
