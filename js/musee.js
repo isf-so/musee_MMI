@@ -36,7 +36,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.querySelector('#svg').addEventListener('click', transition);
-function transition() {
-    document.querySelector(".contenu3").classList.toggle('transition');
-}
+  
